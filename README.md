@@ -5,8 +5,6 @@
 ---
 
 * Mixture Boilerplate *
----
-
 
 
 Bourbon  - A Sass Mixin Library.
