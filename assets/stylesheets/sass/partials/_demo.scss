@@ -6,6 +6,7 @@ $main-dark: #BDC3C7;
 $text: #7F8C8D;
 $link: #E74C3C;
 $hover: #D14233;
+$brown: #583321;
 
 // Layout
 
@@ -42,3 +43,4 @@ a:visited {color:$link;}
 a:hover {color:$hover;}  
 a:active {color:$link;}  
 .red { color: $link;}
+.brown { color: $brown;}

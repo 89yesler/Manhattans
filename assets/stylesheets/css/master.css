@@ -291,6 +291,9 @@ a:active {
 .red {
   color: #e74c3c; }
 
+.brown {
+  color: #583321; }
+
 /** Notes
 
 Bourbon have a clearfix in bourbon/addons. just use @include clearfix;

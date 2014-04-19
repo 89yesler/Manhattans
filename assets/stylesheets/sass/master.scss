@@ -1,4 +1,4 @@
-// Import Bourbon & Neat
+// Import Bourbon, Neat & Bitters
 @import "bourbon/bourbon"; // or "bourbon" when in Rails
 @import "bitters/bitters"; // or "bitters" when in Rails 
 @import "neat/neat"; // or "neat" when in Rails
@@ -22,7 +22,7 @@
 @import "partials/footer";
 
 // Current styles, You can delete this file when you start your project
-@import "partials/current";
+@import "partials/demo";
 
 
 
