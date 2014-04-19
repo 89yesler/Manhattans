@@ -17,13 +17,13 @@ Refills - Prepackaged patterns and components, built on Bourbon, Neat and Bitter
 With a template based on the HTML5 Boilerplate 
 
 # Links
-- Bourbon: http://Bourbon.io/
+- Bourbon: http://bourbon.io
 
 - Neat: http://neat.bourbon.io
 
-- Bitters: http://bitters.bourbon.io/
+- Bitters: http://bitters.bourbon.io
 
-- Refills: http://thoughtbot.github.io/refills/
+- Refills: http://thoughtbot.github.io/refills
 
 - Boilerplate: http://html5boilerplate.com
 
