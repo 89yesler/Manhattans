@@ -1,6 +1,6 @@
-# Bourbon - Neat - Bitters - Refills 
-# a Mixture template
-
+# Bourbon - Neat - Bitters 
+Refills a Mixture template
+==========================
 Bourbon  - A Sass Mixin Library.
 
 Neat - A lightweight semantic grid framework for Sass and Bourbon.
