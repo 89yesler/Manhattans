@@ -1,18 +1,31 @@
 # A boilerplate that includes:
 Bourbon  - A Sass Mixin Library.
-Bourbon Neat - A lightweight semantic grid framework for Sass and Bourbon.
-HTML5 Boilerplate - The web’s most popular front-end template
+
+Neat - A lightweight semantic grid framework for Sass and Bourbon.
+
+Bitters - Scaffold styles, variables and structure for Bourbon.
+
+Refills - Prepackaged patterns and components, built on Bourbon, Neat and Bitters.
+
+- With a template based on the HTML5 Boilerplate 
 
 # Links
-http://Bourbon.io/
-http://neat.bourbon.io/
+Bourbon: http://Bourbon.io/
+Neat: http://neat.bourbon.io
+Bitters: http://bitters.bourbon.io/
+Refills: http://thoughtbot.github.io/refills/
+
 http://html5boilerplate.com
 
 # Created by
+Scott Soderstrom
+@89yesler 
+
+# Based on a template by
 @Aronhafner 
 
 #Github page
-https://github.com/alonalon/Bourbon-Neat-for-Mixture.io
+https://github.com/89yesler/Manhattans
 
 #Notes
-The file _current.scss is just for the presentation site. Feel free to delete this whenever you want.
+Find the includes for Refills at ./templates/includes/refills
