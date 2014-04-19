@@ -1,7 +1,5 @@
-# Bourbon - Neat - Bitters - Refills
+# Mixture template: Bourbon - Neat - Bitters - Refills 
 
-a Mixture template
-==================
 
 Bourbon  - A Sass Mixin Library.
 
