@@ -1,8 +1,8 @@
 
-# Bourbon - Neat - Bitters - Refills / a Mixture template
+# Bourbon - Neat - Bitters - Refills
 =======
 
-**Mixture Template*
+* Mixture Boilerplate *
 ---
 
 
@@ -38,5 +38,8 @@ Scott Soderstrom
 https://github.com/89yesler/Manhattans
 
 #Notes
-Find the includes for Refills at ./templates/includes/refills
+- Find the includes for Refills at ./templates/includes/refills
+- Delete ./assets/stylesheets/partials/_demo.scss at your leisure
+- Remove line [ @import "partials/demo"; ] in ./assets/stylesheets/master.scss
+
 

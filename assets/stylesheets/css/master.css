@@ -272,6 +272,11 @@ body {
   .container:last-child {
     margin-right: 0; }
 
+.manhattan {
+  width: 200px;
+  padding-top: 40px;
+  margin: 0 0; }
+
 .links {
   border-top: 1px solid #e74c3c; }
 
@@ -290,6 +295,9 @@ a:active {
 
 .red {
   color: #e74c3c; }
+
+.brown {
+  color: #583321; }
 
 /** Notes
 
