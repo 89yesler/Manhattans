@@ -4,6 +4,7 @@
 
 * Mixture Boilerplate *
 ---
+![alt text](https://github.com/89yesler/Manhattans/blob/master/assets/img/manhattan_lg.png "Manhattans")
 
 
 Bourbon  - A Sass Mixin Library.
