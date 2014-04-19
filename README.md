@@ -1,7 +1,7 @@
 
 # Bourbon - Neat - Bitters - Refills
 ---
-![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattan_lg.png "Manhattans")
+![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattans_lg.png "Manhattans")
 ---
 
 * Mixture Boilerplate *
