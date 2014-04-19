@@ -2,10 +2,9 @@
 ![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattans_lg.png "Manhattans")
 
 # Bourbon - Neat - Bitters - Refills
----
 
 * Mixture Boilerplate *
-
+---
 
 Bourbon  - A Sass Mixin Library.
 
