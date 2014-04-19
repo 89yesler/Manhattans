@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # Bourbon - Neat - Bitters - Refills / a Mixture template
+=======
+# Bourbon - Neat - Bitters - Refills
+
+*Mixture Template*
+---
+>>>>>>> update
 
 Bourbon  - A Sass Mixin Library.
 
