@@ -28,8 +28,8 @@ With a template based on the HTML5 Boilerplate
 - Boilerplate: http://html5boilerplate.com
 
 # Created by
-Scott Soderstrom
-@89yesler 
+####Scott Soderstrom
+####@89yesler 
 
 # Based on a template by
 @Aronhafner 
