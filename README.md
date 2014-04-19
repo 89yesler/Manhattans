@@ -18,7 +18,7 @@ Bitters: http://bitters.bourbon.io/
 
 Refills: http://thoughtbot.github.io/refills/
 
-Boilerplate: http://html5boilerplate.com
+- Boilerplate: http://html5boilerplate.com
 
 # Created by
 Scott Soderstrom
