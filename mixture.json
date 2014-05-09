@@ -19,7 +19,7 @@
   "optimiseImages": true,
   "optimiseSVG": true,
   "password": null,
-  "preprocessorLocations": "inventory/styles/sass,assets/scripts",
+  "preprocessorLocations": "inventory/styles/sass,inventory/scripts",
   "preprocessorScriptOutput": "inventory/scripts",
   "preprocessorStyleOutput": "inventory/styles/",
   "projectDescription": "Bourbon Neat Bitters, dry, with Refills",

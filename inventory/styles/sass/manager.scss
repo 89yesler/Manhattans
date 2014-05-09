@@ -1,10 +1,22 @@
 // Import 'shift start' resets
 @import "wipedown/normalize.css";
 
-// Import Bourbon, Neat & Bitters
+// Bring on the Bourbon, Neat & Bitters
 @import "bartender/bourbon/bourbon"; 
 @import "bartender/bitters/bitters"; 
 @import "bartender/neat/neat"; 
+
+/* CONFIGURABLES for Bourbon/Bitters/Neat
+
+bourbon/settings/_prefixer.scss - choose which
+bourbon/settings/_px-to-em.scss - set other than 16
+
+bitters/_variables.scss - colors and type
+bitters/_bitters.scss - uncomment top if using Neat
+
+neat/settings/_grid.scss - gutters column etc.
+neat/settings/_visual-grid.scss - appearance & on/off
+*/
 
 // Import Rooms - styles for pages
 @import "rooms/home";
@@ -23,6 +35,10 @@
 @import "sections/footer";
 
 
+// Global styles and overrides to set the mood!
+@import "ambiance"; 
+
+
 // USING RECIPES
 
 /* In inventory/sass/rooms
@@ -33,9 +49,3 @@ EX: @import "../recipes/refills/_bullets.scss"
 EX: to insert inline >> bullets.liquid 
 {% include "recipes/bullets" %}
 */
-
-// Global styles and overrides to set the mood
-@import "ambiance"; 
-
-
-

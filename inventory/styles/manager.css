@@ -253,13 +253,24 @@ body:before {
   left: 0;
   margin: 0 auto;
   max-width: 68em;
-  opacity: 0.3;
+  opacity: 0.1;
   position: fixed;
   right: 0;
   width: 100%;
   pointer-events: none;
   z-index: -1; }
 
+/* CONFIGURABLES for Bourbon/Bitters/Neat
+
+bourbon/settings/_prefixer.scss - choose which
+bourbon/settings/_px-to-em.scss - set other than 16
+
+bitters/_variables.scss - colors and type
+bitters/_bitters.scss - uncomment top if using Neat
+
+neat/settings/_grid.scss - gutters column etc.
+neat/settings/_visual-grid.scss - appearance & on/off
+*/
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
@@ -316,3 +327,11 @@ a:active {
 
 .brown {
   color: #583321; }
+
+/* In inventory/sass/rooms
+EX: @import "../recipes/refills/_bullets.scss"
+*/
+/* In structure/<page>.liquid 
+EX: to insert inline >> bullets.liquid 
+{% include "recipes/bullets" %}
+*/
