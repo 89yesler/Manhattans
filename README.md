@@ -38,8 +38,7 @@ With a template based on the HTML5 Boilerplate
 https://github.com/89yesler/Manhattans
 
 #Notes
-- Find the includes for Refills at ./templates/includes/refills
-- Delete ./assets/stylesheets/partials/_demo.scss at your leisure
-- Remove line [ @import "partials/demo"; ] in ./assets/stylesheets/master.scss
+- Restaurant theme should be clear
+- More notes coming
 
 
