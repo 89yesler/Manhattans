@@ -19,9 +19,9 @@
   "optimiseImages": true,
   "optimiseSVG": true,
   "password": null,
-  "preprocessorLocations": "assets/styles/scss,assets/scripts",
-  "preprocessorScriptOutput": "assets/scripts",
-  "preprocessorStyleOutput": "assets/styles/css",
+  "preprocessorLocations": "inventory/styles/sass,assets/scripts",
+  "preprocessorScriptOutput": "inventory/scripts",
+  "preprocessorStyleOutput": "inventory/styles/",
   "projectDescription": "Bourbon Neat Bitters, dry, with Refills",
   "projectName": "Manhattans: Mixture Boilerplate",
   "publishedId": null,
@@ -35,7 +35,7 @@
   "sitemap": false,
   "templateDefaultLayout": "home",
   "templateDefaultPage": "index",
-  "templateDirectory": "templates",
+  "templateDirectory": "structure",
   "type": "mixture",
   "useCompass": false
 }
