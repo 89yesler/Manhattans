@@ -1,3 +1,4 @@
+
 ![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattans_lg.png "Manhattans")
 
 # Bourbon - Neat - Bitters - Refills
@@ -40,6 +41,5 @@ https://github.com/89yesler/Manhattans
 - Find the includes for Refills at ./templates/includes/refills
 - Delete ./assets/stylesheets/partials/_demo.scss at your leisure
 - Remove line [ @import "partials/demo"; ] in ./assets/stylesheets/master.scss
-- Adding more..
 
 

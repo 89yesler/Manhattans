@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+        {{ "manager.css" | asset_url | stylesheet_tag }}
+       
+       <!-- Inject head styles as blocks per page if needed outside your ambiance.css -->
+        {% block styles %}{% endblock %}
+
+        <!-- include JS libs -->
+        {{ "jquery.min.js" | asset_url | script_tag }}
+        {{ "modernizr.min.js" | asset_url | script_tag }}
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Include -->
+            {% include "header" %}
+            <!-- The main show - your content-->
+            {% block content %}{% endblock %}
+            
+            {% include "footer" %}
+        </div>
+        <!-- Inject block scripts per page if needed outside your action.js -->
+        {% block scripts %}{% endblock %}
+        {{ "action.js" | asset_url | script_tag }}
+        <!-- Google latest Analytics code -->
+        {% include "analytics" %}
+
+    </body>
+</html>
