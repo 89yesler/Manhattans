@@ -1,0 +1,93 @@
+// TODO: << USE THIS FORMAT FOR TODOS BELOW
+
+// TODO: think about sublime snippets
+
+// TODO: bower-install specs for Valet (no normalize needed)
+
+// TODO: bower list for Diagrams readme
+
+// TODO: mixture - hammer - codekit
+
+/*------------------------------------*\
+    MANHATTANS
+\*------------------------------------*/
+/*!*
+ *
+ * use this format for instructions
+ *
+ */
+/**
+ *
+ * LICENSE
+ *
+ * Copyright 2013 Scott Soderstrom
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+/////////////////////////////
+
+
+// Import 'shift start' resets
+@import "0_wipedown/normalize";
+
+// Bring on the Bourbon, Neat & Bitters
+@import "bartender/bourbon/bourbon"; 
+@import "bartender/bitters/bitters"; 
+@import "bartender/neat/neat"; 
+
+/* CONFIGURABLES for Bourbon/Bitters/Neat
+
+bourbon/settings/_prefixer.scss - choose which
+bourbon/settings/_px-to-em.scss - set other than 16
+
+bitters/_variables.scss - colors and type
+bitters/_bitters.scss - uncomment top if using Neat
+
+neat/settings/_grid.scss - gutters column etc.
+neat/settings/_visual-grid.scss - appearance & on/off
+*/
+
+
+// Import Rooms - styles for pages
+@import "rooms/home";
+@import "rooms/about";
+@import "rooms/photos";
+@import "rooms/location";
+@import "rooms/blog";
+@import "rooms/contact";
+
+// Import Sections - styles for areas
+@import "sections/header";
+@import "sections/lightbox";
+@import "sections/main";
+@import "sections/navigation";
+@import "sections/sidebar";
+@import "sections/footer";
+
+
+// Global styles and overrides to set the mood!
+@import "ambiance"; 
+
+
+// USING RECIPES
+
+/* In inventory/sass/rooms
+EX: @import "../recipes/refills/_bullets.scss"
+*/
+
+/* In structure/<page>.liquid 
+EX: to insert inline >> bullets.liquid 
+{% include "recipes/bullets" %}
+*/
