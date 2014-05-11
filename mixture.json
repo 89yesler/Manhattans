@@ -35,7 +35,7 @@
   "sitemap": false,
   "templateDefaultLayout": "home",
   "templateDefaultPage": "index",
-  "templateDirectory": "thehouse",
+  "templateDirectory": "house",
   "type": "mixture",
   "useCompass": false
 }
