@@ -10,18 +10,19 @@
      
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Title block allowing child pages to override -->
         <title>{% block title %}{% endblock %}</title>
-        <link rel="shortcut icon" type="image/ico" href="/assets/imagery/favicon.ico" />
-        <!-- Styles -->
-        {{ "manager.css" | asset_url | stylesheet_tag }}
-       
-       <!-- Inject inline head styles as blocks per page if needed outside your ambiance.css -->
-        {% block styles %}{% endblock %}
 
-        <!-- Include Javascript libraries -->
-        {{ "jquery.min.js" | asset_url | script_tag }}
-        {{ "modernizr.min.js" | asset_url | script_tag }}
+        <link rel="shortcut icon" type="image/ico" href="/assets/image/favicon.ico" />
+
+        <!-- Fonts --> 
+
+        <!-- Styles -->
+        {{ "manager.min.css" | asset_url | stylesheet_tag }}
+       
+       <!-- Try to be DRY, but inject inline head styles per page if needed outside of ambiance or sections-->
+        {% block styles %}{% endblock %}
 
     </head>
     <body>
@@ -35,14 +36,18 @@
             {% include "footer" %}
         </div> 
 
-        <!-- Inject block scripts per page if needed outside your action.js -->
+        <!-- Try to be DRY, but inject inline scripts per page if needed outside your action.js -->
         {% block scripts %}{% endblock %}
 
+        <!-- Include Javascript libraries -->
+        {{ "jquery.min.js" | asset_url | script_tag }}
+        {{ "modernizr.min.js" | asset_url | script_tag }}
+
         <!-- Global Javascript -->
-        {{ "action.js" | asset_url | script_tag }}
+        {{ "action.min.js" | asset_url | script_tag }}
 
         <!-- Google latest Analytics code -->
         {% include "accountant" %}
-<!-- TODO is there anything else from HTML5 BP I can use? -->
+
     </body>
 </html>

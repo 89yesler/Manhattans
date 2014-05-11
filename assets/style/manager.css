@@ -429,6 +429,22 @@ body:before {
   width: 100%;
   pointer-events: none;
   z-index: -1; }
+  @media screen and (min-width: 40em) {
+    body:before {
+      background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: -webkit-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: -moz-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: -ms-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: -o-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%); } }
+  @media screen and (min-width: 53.75em) {
+    body:before {
+      background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: -webkit-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: -moz-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: -ms-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: -o-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%); } }
 
 /* CONFIGURABLES for Bourbon/Bitters/Neat
 
@@ -441,6 +457,203 @@ bitters/_bitters.scss - uncomment top if using Neat
 neat/settings/_grid.scss - gutters column etc.
 neat/settings/_visual-grid.scss - appearance & on/off
 */
+header.navigation {
+  background-color: #333333;
+  border-bottom: 1px solid #1a1a1a;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  header.navigation .menu-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    header.navigation .menu-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: .8em 0; }
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    header.navigation .navigation-menu-button:hover {
+      color: white; }
+  @media screen and (min-width: 53.75em) {
+    header.navigation .nav {
+      float: left; } }
+  header.navigation ul#navigation-menu {
+    clear: both;
+    -webkit-transform-style: preserve-3d;
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  header.navigation ul li {
+    background: #333333;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul li {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        padding-right: 2em;
+        text-decoration: none;
+        width: auto; } }
+    header.navigation ul li a {
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.7); }
+      header.navigation ul li a:hover {
+        color: white; }
+  @media screen and (min-width: 53.75em) {
+    header.navigation .sign-up {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0;
+      left: 0;
+      padding-right: 1em; }
+      header.navigation .sign-up a {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        background: #477dca;
+        border-radius: 0.1875em;
+        color: white;
+        font-size: .8em;
+        font-weight: 800;
+        padding: .6em 1em;
+        text-transform: uppercase; }
+        header.navigation .sign-up a:hover {
+          background: #6f99d5; } }
+  header.navigation li.navigation-search-bar {
+    display: none; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation li.navigation-search-bar {
+        position: absolute;
+        top: 0px;
+        right: 76px;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        line-height: 0 !important;
+        padding: 13px 30px; } }
+  header.navigation .search-bar {
+    width: 19em;
+    position: relative;
+    display: inline-block; }
+    header.navigation .search-bar input {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      display: block; }
+    header.navigation .search-bar .search-and-submit {
+      position: relative; }
+      header.navigation .search-bar .search-and-submit input[type=search] {
+        background: #404040;
+        border: 1px solid #262626;
+        padding: .6em .8em;
+        font-size: .9em;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 0.375em;
+        margin: 0; }
+      header.navigation .search-bar .search-and-submit button[type=submit] {
+        border: 1px solid #363636;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 gray;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: #595959;
+        background-image: -webkit-linear-gradient(#595959, #3d3d3d);
+        background-image: linear-gradient(#595959, #3d3d3d);
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #2b2b2b;
+        background-clip: padding-box;
+        border: 1px solid #3a3131;
+        border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 gray;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        background-color: #595959;
+        background-image: -webkit-linear-gradient(#595959, #433838);
+        background-image: linear-gradient(#595959, #433838);
+        padding: 7px 18px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #322525;
+        background-clip: padding-box;
+        position: absolute;
+        top: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        left: 0;
+        outline: none;
+        padding: 5px 15px; }
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 #666666;
+          cursor: pointer;
+          background-color: #4d4d4d;
+          background-image: -webkit-linear-gradient(#4d4d4d, #363636);
+          background-image: linear-gradient(#4d4d4d, #363636); }
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid #363636;
+          box-shadow: inset 0 0 8px 4px #2e2e2e, inset 0 0 8px 4px #2e2e2e; }
+        header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          box-shadow: inset 0 1px 0 0 #666666;
+          cursor: pointer;
+          background-color: #4d4d4d;
+          background-image: -webkit-linear-gradient(#4d4d4d, #3a3131);
+          background-image: linear-gradient(#4d4d4d, #3a3131); }
+        header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
+          border: 1px solid #3a3131;
+          box-shadow: inset 0 0 8px 4px #312b2b, inset 0 0 8px 4px #312b2b; }
+        header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        header.navigation .search-bar .search-and-submit button[type=submit] img {
+          height: 12px;
+          opacity: .7; }
+
+#navigation-menu {
+  margin-left: 120px; }
+
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
