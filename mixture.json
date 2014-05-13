@@ -3,7 +3,7 @@
   "convertHtmlDefault": null,
   "convertHtmlExtension": ".html",
   "convertHtmlIgnore": null,
-  "convertHtmlOutput": "/site",
+  "convertHtmlOutput": "",
   "customRuby": false,
   "customRubyPath": null,
   "customTodos": null,

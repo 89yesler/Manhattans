@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+
+        <!-- Fonts --> 
+
+        <!-- Styles -->
+        {{ "manager.min.css" | asset_url | stylesheet_tag }}
+       
+       <!-- Try to be DRY, but inject inline head styles per page if needed outside of ambiance or sections-->
+        {% block styles %}{% endblock %}
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Include header structure-->
+            {% include "header" %}
+
+            <!-- Dinner service - your content-->
+            {% block content %}{% endblock %}
+            
+            {% include "footer" %}
+        </div> 
+
+        <!-- Try to be DRY, but inject inline scripts per page if needed outside your action.js -->
+        {% block scripts %}{% endblock %}
+
+        <!-- Include Javascript libraries -->
+        {{ "jquery.min.js" | asset_url | script_tag }}
+        {{ "modernizr.min.js" | asset_url | script_tag }}
+
+        <!-- Global Javascript -->
+        {{ "action.min.js" | asset_url | script_tag }}
+
+        <!-- Google latest Analytics code -->
+        {% include "accountant" %}
+
+    </body>
+</html>
