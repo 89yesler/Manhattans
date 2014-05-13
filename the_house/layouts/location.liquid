@@ -6,40 +6,36 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     
-        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Keywords -->
+        <meta name="keywords" content="{% block keywords %}{% endblock %}">
+        <!-- Description -->
+       <meta name="description" content="{% block description %}{% endblock %}">
 
-        <!-- Title block allowing child pages to override -->
+        <!-- Title -->
         <title>{% block title %}{% endblock %}</title>
 
-        <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" />
+        <link rel="shortcut icon" type="image/ico" href="{{ "favicon.ico" | asset_url }}" />
 
         <!-- Fonts --> 
 
         <!-- Styles -->
         {{ "manager.min.css" | asset_url | stylesheet_tag }}
        
-       <!-- Try to be DRY, but inject inline head styles per page if needed outside of ambiance or sections-->
-        {% block styles %}{% endblock %}
-
     </head>
     <body>
         <div id="wrapper">
-            <!-- Include header structure-->
+            <!-- Header-->
             {% include "header" %}
 
-            <!-- Dinner service - your content-->
+            <!-- Main content-->
             {% block content %}{% endblock %}
-            
+             <!-- Footer-->           
             {% include "footer" %}
         </div> 
 
-        <!-- Try to be DRY, but inject inline scripts per page if needed outside your action.js -->
-        {% block scripts %}{% endblock %}
-
-        <!-- Include Javascript libraries -->
+        <!-- Javascript libraries -->
         {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "modernizr.min.js" | asset_url | script_tag }}
 
