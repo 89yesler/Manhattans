@@ -1,0 +1,32 @@
+
+// Sitewide "Structural" classes
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+	background: $main;
+	color: $text;
+	font-family: $helvetica;
+	font-size: 16px; 
+}
+
+#wrapper {
+	@include outer-container;
+}
+
+.container {
+	padding-top: 40px;
+	@include span-columns(6);
+	@include shift(2);
+}
+
+.manhattan-logo {
+	width: 200px;
+	padding-top: 40px;
+	margin: 0 0;
+}
+

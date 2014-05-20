@@ -1,7 +1,8 @@
 
 ![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattans_lg.png "Manhattans")
 
-# Bourbon Neat & Bitters, DRY, with Refills
+# Bourbon Neat & Bitters   
+# DRY, with Refills
 
 * Mixture Boilerplate *
 ---
