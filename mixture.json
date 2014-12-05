@@ -1,9 +1,18 @@
 {
-  "autoPrefixer": true,
-  "convertHtmlDefault": null,
-  "convertHtmlExtension": ".html",
-  "convertHtmlIgnore": null,
-  "convertHtmlOutput": "",
+  "autoPrefixer": {
+    "active": true,
+    "browsers": [
+      "last 1 version",
+      "> 1%",
+      "ie 8",
+      "ie 7"
+    ]
+  },
+  "convertHtml": {
+    "extension": ".html",
+    "path": "",
+    "relativePaths": false
+  },
   "customRuby": false,
   "customRubyPath": null,
   "customTodos": null,
@@ -12,14 +21,18 @@
   "followLeader": true,
   "ftpSettings": null,
   "gitHubPages": null,
-  "ignoreDir": "ignore",
+  "ignoreDir": [
+    "ignore"
+  ],
   "less": null,
   "lintScripts": false,
   "modelSource": null,
   "optimiseImages": true,
   "optimiseSVG": true,
   "password": null,
-  "preprocessorLocations": "inventory",
+  "preprocessorLocations": [
+    "inventory"
+  ],
   "preprocessorScriptOutput": "inventory/scripts",
   "preprocessorStyleOutput": "inventory/styles",
   "projectDescription": "Bourbon Neat & Bitters, DRY, with Refills",
@@ -35,7 +48,7 @@
   "sitemap": false,
   "templateDefaultLayout": "restaurant",
   "templateDefaultPage": "index",
-  "templateDirectory": "the_house",
+  "templateDirectory": "structure",
   "type": "mixture",
   "useCompass": false
 }

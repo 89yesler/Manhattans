@@ -70,6 +70,7 @@ figure {
 
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -106,6 +107,8 @@ input {
   line-height: normal; }
 
 input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -147,17 +150,20 @@ button,
 input[type="submit"] {
   border: 1px solid #2459a6;
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #89a8d5;
   box-shadow: inset 0 1px 0 0 #89a8d5;
   color: white;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #477dca;
-  background-image: -webkit-linear-gradient(#477dca, #2760b2);
-  background-image: linear-gradient(#477dca, #2760b2);
+  background-color: #477DCA;
+  background-image: -webkit-linear-gradient(#477DCA, #2760b2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#477DCA), to(#2760b2));
+  background-image: linear-gradient(#477DCA, #2760b2);
   padding: 7px 18px;
   text-decoration: none;
   text-shadow: 0 1px 0 #1b4f9a;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   -webkit-font-smoothing: antialiased;
   font-size: 1em;
@@ -165,15 +171,18 @@ input[type="submit"] {
   line-height: 1em; }
   button:hover:not(:disabled),
   input[type="submit"]:hover:not(:disabled) {
+    -webkit-box-shadow: inset 0 1px 0 0 #628cc8;
     box-shadow: inset 0 1px 0 0 #628cc8;
     cursor: pointer;
     background-color: #3c71bb;
     background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3c71bb), to(#255aa5));
     background-image: linear-gradient(#3c71bb, #255aa5); }
   button:active:not(:disabled),
   input[type="submit"]:active:not(:disabled), button:focus:not(:disabled),
   input[type="submit"]:focus:not(:disabled) {
     border: 1px solid #2459a6;
+    -webkit-box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397;
     box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397; }
   button:disabled,
   input[type="submit"]:disabled {
@@ -181,7 +190,7 @@ input[type="submit"] {
     cursor: not-allowed; }
 
 body {
-  color: #333333;
+  color: #333;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
@@ -215,10 +224,9 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #477dca;
+  color: #477DCA;
   text-decoration: none;
   -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
   transition: color 0.1s linear; }
   a:hover {
     color: #2c5999; }
@@ -227,7 +235,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -238,7 +246,7 @@ img {
   max-width: 100%; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #dddddd;
+  border-bottom: 1px dotted #DDD;
   cursor: help; }
 
 address {
@@ -252,7 +260,7 @@ del {
   color: #595959; }
 
 blockquote {
-  border-left: 2px solid #dddddd;
+  border-left: 2px solid #DDD;
   color: #595959;
   margin: 1.5em 0;
   padding-left: 0.75em; }
@@ -265,7 +273,7 @@ cite {
 
 fieldset {
   background: #f7f7f7;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
   margin: 0 0 0.75em 0;
   padding: 1.5em; }
 
@@ -291,11 +299,11 @@ select[multiple=multiple] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: border-color;
-  -moz-transition: border-color;
   transition: border-color;
   background-color: white;
   border-radius: 0.1875em;
-  border: 1px solid #dddddd;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
@@ -309,7 +317,8 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #477dca;
+    border-color: #477DCA;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
     outline: none; }
 
@@ -343,6 +352,9 @@ input[type="submit"] {
   -o-appearance: none;
   appearance: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
@@ -360,7 +372,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
   padding: 0.75em 0; }
 
 tr, td, th {
@@ -389,9 +401,7 @@ body:before {
   display: inline-block;
   background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
   background-image: -webkit-linear-gradient(left, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, chocolate), color-stop(6.17215%, chocolate), color-stop(6.17215%, transparent), color-stop(8.5298%, transparent), color-stop(8.5298%, chocolate), color-stop(14.70196%, chocolate), color-stop(14.70196%, transparent), color-stop(17.05961%, transparent), color-stop(17.05961%, chocolate), color-stop(23.23176%, chocolate), color-stop(23.23176%, transparent), color-stop(25.58941%, transparent), color-stop(25.58941%, chocolate), color-stop(31.76157%, chocolate), color-stop(31.76157%, transparent), color-stop(34.11922%, transparent), color-stop(34.11922%, chocolate), color-stop(40.29137%, chocolate), color-stop(40.29137%, transparent), color-stop(42.64902%, transparent), color-stop(42.64902%, chocolate), color-stop(48.82117%, chocolate), color-stop(48.82117%, transparent), color-stop(51.17883%, transparent), color-stop(51.17883%, chocolate), color-stop(57.35098%, chocolate), color-stop(57.35098%, transparent), color-stop(59.70863%, transparent), color-stop(59.70863%, chocolate), color-stop(65.88078%, chocolate), color-stop(65.88078%, transparent), color-stop(68.23843%, transparent), color-stop(68.23843%, chocolate), color-stop(74.41059%, chocolate), color-stop(74.41059%, transparent), color-stop(76.76824%, transparent), color-stop(76.76824%, chocolate), color-stop(82.94039%, chocolate), color-stop(82.94039%, transparent), color-stop(85.29804%, transparent), color-stop(85.29804%, chocolate), color-stop(91.4702%, chocolate), color-stop(91.4702%, transparent), color-stop(93.82785%, transparent), color-stop(93.82785%, chocolate), color-stop(100.0%, chocolate), color-stop(100.0%, transparent));
   background-image: linear-gradient(left, transparent 0, chocolate 0, chocolate 6.17215%, transparent 6.17215%, transparent 8.5298%, chocolate 8.5298%, chocolate 14.70196%, transparent 14.70196%, transparent 17.05961%, chocolate 17.05961%, chocolate 23.23176%, transparent 23.23176%, transparent 25.58941%, chocolate 25.58941%, chocolate 31.76157%, transparent 31.76157%, transparent 34.11922%, chocolate 34.11922%, chocolate 40.29137%, transparent 40.29137%, transparent 42.64902%, chocolate 42.64902%, chocolate 48.82117%, transparent 48.82117%, transparent 51.17883%, chocolate 51.17883%, chocolate 57.35098%, transparent 57.35098%, transparent 59.70863%, chocolate 59.70863%, chocolate 65.88078%, transparent 65.88078%, transparent 68.23843%, chocolate 68.23843%, chocolate 74.41059%, transparent 74.41059%, transparent 76.76824%, chocolate 76.76824%, chocolate 82.94039%, transparent 82.94039%, transparent 85.29804%, chocolate 85.29804%, chocolate 91.4702%, transparent 91.4702%, transparent 93.82785%, chocolate 93.82785%, chocolate 100.0%, transparent 100.0%);
   height: 100%;
   left: 0;
@@ -407,17 +417,13 @@ body:before {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
       background-image: -webkit-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
-      background-image: -moz-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
-      background-image: -ms-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
-      background-image: -o-linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%);
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, chocolate), color-stop(19.43277%, chocolate), color-stop(19.43277%, transparent), color-stop(26.85574%, transparent), color-stop(26.85574%, chocolate), color-stop(46.28851%, chocolate), color-stop(46.28851%, transparent), color-stop(53.71149%, transparent), color-stop(53.71149%, chocolate), color-stop(73.14426%, chocolate), color-stop(73.14426%, transparent), color-stop(80.56723%, transparent), color-stop(80.56723%, chocolate), color-stop(100%, chocolate), to(transparent));
       background-image: linear-gradient(left, transparent 0, chocolate 0, chocolate 19.43277%, transparent 19.43277%, transparent 26.85574%, chocolate 26.85574%, chocolate 46.28851%, transparent 46.28851%, transparent 53.71149%, chocolate 53.71149%, chocolate 73.14426%, transparent 73.14426%, transparent 80.56723%, chocolate 80.56723%, chocolate 100%, transparent 100%); } }
   @media screen and (min-width: 53.75em) {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
       background-image: -webkit-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
-      background-image: -moz-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
-      background-image: -ms-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
-      background-image: -o-linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%);
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, chocolate), color-stop(9.36867%, chocolate), color-stop(9.36867%, transparent), color-stop(12.94733%, transparent), color-stop(12.94733%, chocolate), color-stop(22.316%, chocolate), color-stop(22.316%, transparent), color-stop(25.89467%, transparent), color-stop(25.89467%, chocolate), color-stop(35.26334%, chocolate), color-stop(35.26334%, transparent), color-stop(38.842%, transparent), color-stop(38.842%, chocolate), color-stop(48.21067%, chocolate), color-stop(48.21067%, transparent), color-stop(51.78933%, transparent), color-stop(51.78933%, chocolate), color-stop(61.158%, chocolate), color-stop(61.158%, transparent), color-stop(64.73666%, transparent), color-stop(64.73666%, chocolate), color-stop(74.10533%, chocolate), color-stop(74.10533%, transparent), color-stop(77.684%, transparent), color-stop(77.684%, chocolate), color-stop(87.05267%, chocolate), color-stop(87.05267%, transparent), color-stop(90.63133%, transparent), color-stop(90.63133%, chocolate), color-stop(100.0%, chocolate), color-stop(100.0%, transparent));
       background-image: linear-gradient(left, transparent 0, chocolate 0, chocolate 9.36867%, transparent 9.36867%, transparent 12.94733%, chocolate 12.94733%, chocolate 22.316%, transparent 22.316%, transparent 25.89467%, chocolate 25.89467%, chocolate 35.26334%, transparent 35.26334%, transparent 38.842%, chocolate 38.842%, chocolate 48.21067%, transparent 48.21067%, transparent 51.78933%, chocolate 51.78933%, chocolate 61.158%, transparent 61.158%, transparent 64.73666%, chocolate 64.73666%, chocolate 74.10533%, transparent 74.10533%, transparent 77.684%, chocolate 77.684%, chocolate 87.05267%, transparent 87.05267%, transparent 90.63133%, chocolate 90.63133%, chocolate 100.0%, transparent 100.0%); } }
 
 /* CONFIGURABLES for Bourbon/Bitters/Neat
@@ -440,35 +446,37 @@ neat/settings/_visual-grid.scss - appearance & on/off
 * Docs at http://davidtheclark.github.io/scut
 */
 a:link {
-  color: #e74c3c;
+  color: #E74C3C;
   text-decoration: none; }
 
 a:visited {
-  color: #e74c3c; }
+  color: #E74C3C; }
 
 a:hover {
-  color: #d14233; }
+  color: #D14233; }
 
 a:active {
-  color: #e74c3c; }
+  color: #E74C3C; }
 
 .red {
-  color: #e74c3c; }
+  color: #E74C3C; }
 
 .brown {
   color: #583321; }
 
 .links {
-  border-top: 1px solid #e74c3c; }
+  border-top: 1px solid #E74C3C; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 body {
-  background: #fbfcfc;
-  color: #7f8c8d;
+  background: #FBFCFC;
+  color: #7F8C8D;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 16px; }
 
@@ -497,7 +505,7 @@ body {
   margin: 0 0; }
 
 header.navigation {
-  background-color: #333333;
+  background-color: #333;
   border-bottom: 1px solid #1a1a1a;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   height: 60px;
@@ -555,7 +563,7 @@ header.navigation {
         margin: 0;
         padding: 0; } }
   header.navigation ul li {
-    background: #333333;
+    background: #333;
     display: block;
     line-height: 60px;
     overflow: hidden;
@@ -586,9 +594,8 @@ header.navigation {
       padding-right: 1em; }
       header.navigation .sign-up a {
         -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        background: #477dca;
+        background: #477DCA;
         border-radius: 0.1875em;
         color: white;
         font-size: .8em;
@@ -632,6 +639,7 @@ header.navigation {
       header.navigation .search-bar .search-and-submit button[type=submit] {
         border: 1px solid #363636;
         border-radius: 3px;
+        -webkit-box-shadow: inset 0 1px 0 0 gray;
         box-shadow: inset 0 1px 0 0 gray;
         color: white;
         display: inline-block;
@@ -639,13 +647,16 @@ header.navigation {
         font-weight: bold;
         background-color: #595959;
         background-image: -webkit-linear-gradient(#595959, #3d3d3d);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#3d3d3d));
         background-image: linear-gradient(#595959, #3d3d3d);
         padding: 7px 18px;
         text-decoration: none;
         text-shadow: 0 1px 0 #2b2b2b;
+        -webkit-background-clip: padding-box;
         background-clip: padding-box;
         border: 1px solid #3a3131;
         border-radius: 3px;
+        -webkit-box-shadow: inset 0 1px 0 0 gray;
         box-shadow: inset 0 1px 0 0 gray;
         color: white;
         display: inline-block;
@@ -653,10 +664,12 @@ header.navigation {
         font-weight: bold;
         background-color: #595959;
         background-image: -webkit-linear-gradient(#595959, #433838);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#433838));
         background-image: linear-gradient(#595959, #433838);
         padding: 7px 18px;
         text-decoration: none;
         text-shadow: 0 1px 0 #322525;
+        -webkit-background-clip: padding-box;
         background-clip: padding-box;
         position: absolute;
         top: 0.3em;
@@ -666,22 +679,28 @@ header.navigation {
         outline: none;
         padding: 5px 15px; }
         header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          -webkit-box-shadow: inset 0 1px 0 0 #666666;
           box-shadow: inset 0 1px 0 0 #666666;
           cursor: pointer;
           background-color: #4d4d4d;
           background-image: -webkit-linear-gradient(#4d4d4d, #363636);
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), to(#363636));
           background-image: linear-gradient(#4d4d4d, #363636); }
         header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
           border: 1px solid #363636;
+          -webkit-box-shadow: inset 0 0 8px 4px #2e2e2e, inset 0 0 8px 4px #2e2e2e;
           box-shadow: inset 0 0 8px 4px #2e2e2e, inset 0 0 8px 4px #2e2e2e; }
         header.navigation .search-bar .search-and-submit button[type=submit]:hover:not(:disabled) {
+          -webkit-box-shadow: inset 0 1px 0 0 #666666;
           box-shadow: inset 0 1px 0 0 #666666;
           cursor: pointer;
           background-color: #4d4d4d;
           background-image: -webkit-linear-gradient(#4d4d4d, #3a3131);
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), to(#3a3131));
           background-image: linear-gradient(#4d4d4d, #3a3131); }
         header.navigation .search-bar .search-and-submit button[type=submit]:active:not(:disabled), header.navigation .search-bar .search-and-submit button[type=submit]:focus:not(:disabled) {
           border: 1px solid #3a3131;
+          -webkit-box-shadow: inset 0 0 8px 4px #312b2b, inset 0 0 8px 4px #312b2b;
           box-shadow: inset 0 0 8px 4px #312b2b, inset 0 0 8px 4px #312b2b; }
         header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
           opacity: 0.5;
@@ -700,3 +719,5 @@ EX: @import "../recipes/refills/_bullets.scss"
 EX: to insert inline >> bullets.liquid 
 {% include "recipes/bullets" %}
 */
+
+
