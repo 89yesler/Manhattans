@@ -1,5 +1,5 @@
 
-![alt text](http://manhattans.89yesler.mixture.io/assets/img/manhattans_lg.png "Manhattans")
+![Alt text](manhattan_lg.png?raw=true )
 
 # Bourbon Neat & Bitters   
 # DRY, with Refills
